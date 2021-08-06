@@ -13,6 +13,8 @@
 		7F1C655226BDBCC700DC949A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C655026BDBCC700DC949A /* Main.storyboard */; };
 		7F1C655426BDBCCB00DC949A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C655326BDBCCB00DC949A /* Assets.xcassets */; };
 		7F1C655726BDBCCB00DC949A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C655526BDBCCB00DC949A /* LaunchScreen.storyboard */; };
+		7F1C655F26BDBD4300DC949A /* IpGeo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C655E26BDBD4300DC949A /* IpGeo.swift */; };
+		7F1C656526BDC97300DC949A /* IpGeoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C656426BDC97300DC949A /* IpGeoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7F1C655326BDBCCB00DC949A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1C655626BDBCCB00DC949A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F1C655826BDBCCB00DC949A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F1C655E26BDBD4300DC949A /* IpGeo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpGeo.swift; sourceTree = "<group>"; };
+		7F1C656426BDC97300DC949A /* IpGeoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpGeoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		7F1C654926BDBCC700DC949A /* HW.10.IP_Geo */ = {
 			isa = PBXGroup;
 			children = (
+				7F1C656326BDBDBF00DC949A /* Supporting files */,
+				7F1C656026BDBD4800DC949A /* Models */,
+				7F1C656126BDBD8C00DC949A /* View Controllers */,
+				7F1C656226BDBDA300DC949A /* StoryBoards */,
+			);
+			path = HW.10.IP_Geo;
+			sourceTree = "<group>";
+		};
+		7F1C656026BDBD4800DC949A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F1C655E26BDBD4300DC949A /* IpGeo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F1C656126BDBD8C00DC949A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F1C656426BDC97300DC949A /* IpGeoViewController.swift */,
+				7F1C654E26BDBCC700DC949A /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7F1C656226BDBDA300DC949A /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				7F1C655026BDBCC700DC949A /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		7F1C656326BDBDBF00DC949A /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				7F1C654A26BDBCC700DC949A /* AppDelegate.swift */,
 				7F1C654C26BDBCC700DC949A /* SceneDelegate.swift */,
-				7F1C654E26BDBCC700DC949A /* ViewController.swift */,
-				7F1C655026BDBCC700DC949A /* Main.storyboard */,
 				7F1C655326BDBCCB00DC949A /* Assets.xcassets */,
 				7F1C655526BDBCCB00DC949A /* LaunchScreen.storyboard */,
 				7F1C655826BDBCCB00DC949A /* Info.plist */,
 			);
-			path = HW.10.IP_Geo;
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +177,8 @@
 			files = (
 				7F1C654F26BDBCC700DC949A /* ViewController.swift in Sources */,
 				7F1C654B26BDBCC700DC949A /* AppDelegate.swift in Sources */,
+				7F1C655F26BDBD4300DC949A /* IpGeo.swift in Sources */,
+				7F1C656526BDC97300DC949A /* IpGeoViewController.swift in Sources */,
 				7F1C654D26BDBCC700DC949A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PD9MGCM3R5;
-				INFOPLIST_FILE = HW.10.IP_Geo/Info.plist;
+				INFOPLIST_FILE = "HW.10.IP_Geo/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PD9MGCM3R5;
-				INFOPLIST_FILE = HW.10.IP_Geo/Info.plist;
+				INFOPLIST_FILE = "HW.10.IP_Geo/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
