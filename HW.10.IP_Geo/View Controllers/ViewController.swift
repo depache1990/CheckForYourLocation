@@ -9,12 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var ipGeo: IpGeo?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let ipGeoVC = segue.destination as? IpGeoViewController else { return }
         ipGeoVC.myIpGeo = ipGeo
@@ -46,9 +41,6 @@ class ViewController: UIViewController {
         }.resume()
         
     }
-    // MARK: - Navigation
-    
-    
     
     // MARK: - Private Methods
     private func successAlert() {
