@@ -25,7 +25,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickButton:" destination="EEn-op-FGx" eventType="touchUpInside" id="ieS-2l-BFW"/>
                                     <segue destination="Tj9-TJ-Bhw" kind="show" identifier="showIpGeo" id="eze-L6-9F0"/>
                                 </connections>
                             </button>
@@ -52,52 +51,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="wF4-02-i1z">
-                                <rect key="frame" x="153.5" y="208.5" width="107.5" height="479"/>
+                                <rect key="frame" x="200" y="438" width="14.5" height="20.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhZ-zP-9fn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ip" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhZ-zP-9fn">
                                         <rect key="frame" x="0.0" y="0.0" width="14.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQq-Y9-yhf">
-                                        <rect key="frame" x="0.0" y="65.5" width="103.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIM-i7-Diy">
-                                        <rect key="frame" x="0.0" y="131" width="107.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L10-i4-qj3">
-                                        <rect key="frame" x="0.0" y="196.5" width="95" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oT-L0-M6s">
-                                        <rect key="frame" x="0.0" y="262" width="99" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdd-ip-mfk">
-                                        <rect key="frame" x="0.0" y="327.5" width="30.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqV-XE-Cyj">
-                                        <rect key="frame" x="0.0" y="393" width="67" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemIndigoColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time zone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zA5-ZY-3fz">
-                                        <rect key="frame" x="0.0" y="458.5" width="79" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemIndigoColor"/>
                                         <nil key="highlightedColor"/>
@@ -106,29 +63,62 @@
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <color key="tintColor" red="0.25719454400000002" green="0.29245022549999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxr-47-XlL">
+                                <rect key="frame" x="150" y="712" width="114" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="OMk-hv-aeW" kind="show" id="7Rk-qG-gSf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wRJ-AU-kDL"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
+                            <constraint firstItem="Qxr-47-XlL" firstAttribute="leading" secondItem="wRJ-AU-kDL" secondAttribute="leading" constant="150" id="0ae-jF-u76"/>
+                            <constraint firstItem="wRJ-AU-kDL" firstAttribute="bottom" secondItem="Qxr-47-XlL" secondAttribute="bottom" constant="120" id="WFz-jv-KW9"/>
+                            <constraint firstItem="wRJ-AU-kDL" firstAttribute="trailing" secondItem="Qxr-47-XlL" secondAttribute="trailing" constant="150" id="dVf-nL-s7U"/>
                             <constraint firstItem="wF4-02-i1z" firstAttribute="centerX" secondItem="xLR-JA-fh1" secondAttribute="centerX" id="eG5-rp-JBX"/>
                             <constraint firstItem="wF4-02-i1z" firstAttribute="centerY" secondItem="xLR-JA-fh1" secondAttribute="centerY" id="kGT-Kv-BFs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your ip geolocation info" id="jga-Da-Pw8"/>
                     <connections>
-                        <outlet property="cityLabel" destination="pdd-ip-mfk" id="j66-6E-29P"/>
-                        <outlet property="countryCodeLabel" destination="gQq-Y9-yhf" id="Z4C-oo-YXo"/>
-                        <outlet property="countryNameLabel" destination="DIM-i7-Diy" id="jGO-vO-ZN5"/>
                         <outlet property="ipLabel" destination="zhZ-zP-9fn" id="8rN-un-I93"/>
-                        <outlet property="regionCodeLabel" destination="L10-i4-qj3" id="SOD-1j-Qor"/>
-                        <outlet property="regionNameLabel" destination="9oT-L0-M6s" id="HxH-Yx-U2c"/>
-                        <outlet property="timeZoneLabel" destination="zA5-ZY-3fz" id="iwP-nc-maE"/>
-                        <outlet property="zipCodeLabel" destination="AqV-XE-Cyj" id="MK8-OC-Tvn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2H-9U-v3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462.3188405797105" y="-60.267857142857139"/>
+            <point key="canvasLocation" x="2350.7246376811595" y="-68.303571428571431"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="bXe-zx-3VL">
+            <objects>
+                <viewController id="OMk-hv-aeW" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZT5-ED-dYh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Kdd-kr-UKg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S3G-A2-pRr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kdd-kr-UKg" firstAttribute="leading" secondItem="S3G-A2-pRr" secondAttribute="leading" id="AAQ-vY-uIS"/>
+                            <constraint firstItem="S3G-A2-pRr" firstAttribute="bottom" secondItem="Kdd-kr-UKg" secondAttribute="bottom" id="Psr-p8-RBi"/>
+                            <constraint firstItem="Kdd-kr-UKg" firstAttribute="top" secondItem="S3G-A2-pRr" secondAttribute="top" id="f6o-XS-Svr"/>
+                            <constraint firstItem="S3G-A2-pRr" firstAttribute="trailing" secondItem="Kdd-kr-UKg" secondAttribute="trailing" id="i9r-Yf-Lrm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EWi-Zc-0Fm"/>
+                    <connections>
+                        <outlet property="mapView" destination="Kdd-kr-UKg" id="ohT-ut-kjC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tl0-NJ-dfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3282" y="-71"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="akv-2V-4vU">

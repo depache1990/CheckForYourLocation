@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0B29F89944E02752C699CD /* Pods_HW_10_IP_Geo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0FF37A2C7E2AD772E2EB67 /* Pods_HW_10_IP_Geo.framework */; };
 		7F1C654B26BDBCC700DC949A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C654A26BDBCC700DC949A /* AppDelegate.swift */; };
 		7F1C654D26BDBCC700DC949A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C654C26BDBCC700DC949A /* SceneDelegate.swift */; };
 		7F1C654F26BDBCC700DC949A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C654E26BDBCC700DC949A /* ViewController.swift */; };
@@ -15,9 +16,13 @@
 		7F1C655726BDBCCB00DC949A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C655526BDBCCB00DC949A /* LaunchScreen.storyboard */; };
 		7F1C655F26BDBD4300DC949A /* IpGeo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C655E26BDBD4300DC949A /* IpGeo.swift */; };
 		7F1C656526BDC97300DC949A /* IpGeoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C656426BDC97300DC949A /* IpGeoViewController.swift */; };
+		7F1C656C26C2853C00DC949A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C656B26C2853C00DC949A /* NetworkManager.swift */; };
+		7F903A7226C3BE350079C660 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F903A7126C3BE350079C660 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5618B35FFF951D5EC6DBD03F /* Pods-HW.10.IP_Geo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW.10.IP_Geo.debug.xcconfig"; path = "Target Support Files/Pods-HW.10.IP_Geo/Pods-HW.10.IP_Geo.debug.xcconfig"; sourceTree = "<group>"; };
+		742438A6FA4ACB5911437C17 /* Pods-HW.10.IP_Geo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW.10.IP_Geo.release.xcconfig"; path = "Target Support Files/Pods-HW.10.IP_Geo/Pods-HW.10.IP_Geo.release.xcconfig"; sourceTree = "<group>"; };
 		7F1C654726BDBCC700DC949A /* HW.10.IP_Geo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW.10.IP_Geo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1C654A26BDBCC700DC949A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F1C654C26BDBCC700DC949A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,9 @@
 		7F1C655826BDBCCB00DC949A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F1C655E26BDBD4300DC949A /* IpGeo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpGeo.swift; sourceTree = "<group>"; };
 		7F1C656426BDC97300DC949A /* IpGeoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpGeoViewController.swift; sourceTree = "<group>"; };
+		7F1C656B26C2853C00DC949A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7F903A7126C3BE350079C660 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DD0FF37A2C7E2AD772E2EB67 /* Pods_HW_10_IP_Geo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW_10_IP_Geo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0B29F89944E02752C699CD /* Pods_HW_10_IP_Geo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42211241F4FB6B0B9280BF51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5618B35FFF951D5EC6DBD03F /* Pods-HW.10.IP_Geo.debug.xcconfig */,
+				742438A6FA4ACB5911437C17 /* Pods-HW.10.IP_Geo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C8A74B93B300418FD98B744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD0FF37A2C7E2AD772E2EB67 /* Pods_HW_10_IP_Geo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F1C653E26BDBCC700DC949A = {
 			isa = PBXGroup;
 			children = (
 				7F1C654926BDBCC700DC949A /* HW.10.IP_Geo */,
 				7F1C654826BDBCC700DC949A /* Products */,
+				42211241F4FB6B0B9280BF51 /* Pods */,
+				4C8A74B93B300418FD98B744 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +92,7 @@
 				7F1C656026BDBD4800DC949A /* Models */,
 				7F1C656126BDBD8C00DC949A /* View Controllers */,
 				7F1C656226BDBDA300DC949A /* StoryBoards */,
+				7F1C656D26C2854000DC949A /* Services */,
 			);
 			path = HW.10.IP_Geo;
 			sourceTree = "<group>";
@@ -80,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				7F1C656426BDC97300DC949A /* IpGeoViewController.swift */,
+				7F903A7126C3BE350079C660 /* MapViewController.swift */,
 				7F1C654E26BDBCC700DC949A /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -105,6 +135,14 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		7F1C656D26C2854000DC949A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7F1C656B26C2853C00DC949A /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F1C655B26BDBCCB00DC949A /* Build configuration list for PBXNativeTarget "HW.10.IP_Geo" */;
 			buildPhases = (
+				4AC9674EF26DA4142E3A4B58 /* [CP] Check Pods Manifest.lock */,
 				7F1C654326BDBCC700DC949A /* Sources */,
 				7F1C654426BDBCC700DC949A /* Frameworks */,
 				7F1C654526BDBCC700DC949A /* Resources */,
+				85FC014B18A616F68A3572AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +210,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AC9674EF26DA4142E3A4B58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HW.10.IP_Geo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85FC014B18A616F68A3572AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HW.10.IP_Geo/Pods-HW.10.IP_Geo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HW.10.IP_Geo/Pods-HW.10.IP_Geo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HW.10.IP_Geo/Pods-HW.10.IP_Geo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F1C654326BDBCC700DC949A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -178,8 +260,10 @@
 				7F1C654F26BDBCC700DC949A /* ViewController.swift in Sources */,
 				7F1C654B26BDBCC700DC949A /* AppDelegate.swift in Sources */,
 				7F1C655F26BDBD4300DC949A /* IpGeo.swift in Sources */,
+				7F1C656C26C2853C00DC949A /* NetworkManager.swift in Sources */,
 				7F1C656526BDC97300DC949A /* IpGeoViewController.swift in Sources */,
 				7F1C654D26BDBCC700DC949A /* SceneDelegate.swift in Sources */,
+				7F903A7226C3BE350079C660 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +407,7 @@
 		};
 		7F1C655C26BDBCCB00DC949A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5618B35FFF951D5EC6DBD03F /* Pods-HW.10.IP_Geo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +427,7 @@
 		};
 		7F1C655D26BDBCCB00DC949A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 742438A6FA4ACB5911437C17 /* Pods-HW.10.IP_Geo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

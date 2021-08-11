@@ -6,32 +6,47 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class IpGeoViewController: UIViewController {
     
     @IBOutlet var ipLabel: UILabel!
-    @IBOutlet var countryCodeLabel: UILabel!
-    @IBOutlet var countryNameLabel: UILabel!
-    @IBOutlet var regionCodeLabel: UILabel!
-    @IBOutlet var regionNameLabel: UILabel!
-    @IBOutlet var cityLabel: UILabel!
-    @IBOutlet var zipCodeLabel: UILabel!
-    @IBOutlet var timeZoneLabel: UILabel!
-    
+
      var myIpGeo: IpGeo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchIpGeo()
+        alomafireGetButton()
         
-        ipLabel.text = "My Ip address: \(myIpGeo?.ip ?? "")"
-        countryCodeLabel.text = "My country Code: \(myIpGeo?.country_code ?? "")"
-        countryNameLabel.text = "My country Name: \(myIpGeo?.country_name ?? "")"
-        regionCodeLabel.text = "My country Code: \(myIpGeo?.region_code ?? "")"
-        regionNameLabel.text = "My region Name: \(myIpGeo?.region_name ?? "")"
-        cityLabel.text = "My City: \(myIpGeo?.city ?? "")"
-        zipCodeLabel.text = "My zip code: \(myIpGeo?.zip_code ?? "")"
-        timeZoneLabel.text = "My time zone: \(myIpGeo?.time_zone ?? "")"
+        ipLabel.text = myIpGeo?.description ?? ""
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       guard let mapGeoVC = segue.destination as? MapViewController else { return }
+        mapGeoVC.myIpGeo = myIpGeo
+  }
+    
+    
+    func alomafireGetButton(){
+        AF.request(URLS.postRequest.rawValue, method: .get)
+            .responseJSON { dataResponse in
+                guard let statusCode = dataResponse.response?.statusCode else { return }
+                print("statusCode", statusCode)
+                
+                if (200..<300).contains(statusCode) {
+                    guard let value = dataResponse.value else { return }
+                    print("value", value)
+                } else {
+                    guard let error = dataResponse.error else { return }
+                    print(error)
+                }
+                
+                
+            }
+    }
+    
+    
 }
 // MARK: - Networking
 extension IpGeoViewController {
@@ -50,11 +65,19 @@ extension IpGeoViewController {
             
             do {
                 self.myIpGeo = try JSONDecoder().decode(IpGeo.self, from: data)
+
+                DispatchQueue.main.async {
+                    self.ipLabel.text = self.myIpGeo?.description ?? ""
+                    //
+                }
             } catch let error {
                 print(error.localizedDescription)
             }
             
         }.resume()
     }
+    
+    
+    
 }
 

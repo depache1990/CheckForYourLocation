@@ -1,0 +1,6 @@
+framework module Pods_HW_10_IP_Geo {
+  umbrella header "Pods-HW.10.IP_Geo-umbrella.h"
+
+  export *
+  module * { export * }
+}
