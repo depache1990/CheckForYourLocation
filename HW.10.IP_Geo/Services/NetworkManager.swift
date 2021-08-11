@@ -14,33 +14,31 @@ class NetworkManager {
     
     private init() {}
     
-    func fetchData(from url: String?, with complition: @escaping (IpGeo) -> Void) {
-        guard let stringURL = url else { return }
-        guard let url = URL(string: stringURL) else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            if let error = error {
-                print(error)
-                return
-            }
-            
-            guard let data = data else { return }
-            
-            
-            do {
-                let ipGeo = try JSONDecoder().decode(IpGeo.self, from: data)
-                DispatchQueue.main.async {
-                    complition(ipGeo)
-                }
-            } catch let error {
-                print(error)
-            }
-            
-        }.resume()
-    }
+//    func fetchData(from url: String?, with complition: @escaping (IpGeo) -> Void) {
+//        guard let stringURL = url else { return }
+//        guard let url = URL(string: stringURL) else { return }
+//        
+//        URLSession.shared.dataTask(with: url) { (data, _, error) in
+//            if let error = error {
+//                print(error)
+//                return
+//            }
+//            guard let data = data else { return }
+//            
+//            do {
+//                let ipGeo = try JSONDecoder().decode(IpGeo.self, from: data)
+//                DispatchQueue.main.async {
+//                    complition(ipGeo)
+//                }
+//            } catch let error {
+//                print(error)
+//            }
+//            
+//        }.resume()
+//    }
     
     func alomafireGetButton(){
-        AF.request(URLS.postRequest.rawValue, method: .get)
+        AF.request(URLS.myIpAddress.rawValue, method: .get)
             .responseJSON { dataResponse in
                 guard let statusCode = dataResponse.response?.statusCode else { return }
                 print("statusCode", statusCode)
