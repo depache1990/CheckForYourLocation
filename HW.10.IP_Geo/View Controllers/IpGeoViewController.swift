@@ -17,51 +17,48 @@ class IpGeoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //fetchIpGeo()
+        fetchIpGeo()
       
         
         ipLabel.text = myIpGeo?.description ?? ""
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       guard let mapGeoVC = segue.destination as? MapViewController else { return }
-        mapGeoVC.myIpGeo = myIpGeo
-  }
+   
     
     
   
     
     
 }
-//// MARK: - Networking
-//extension IpGeoViewController {
-//
-//    func fetchIpGeo() {
-//
-//        guard  let url = URL(string: "https://freegeoip.app/json/") else {
-//            return
-//        }
-//
-//        URLSession.shared.dataTask(with: url) { data, _, error in
-//            guard let data = data else {
-//                print (error?.localizedDescription ?? "no error description")
-//                return
-//            }
-//
-//            do {
-//                self.myIpGeo = try JSONDecoder().decode(IpGeo.self, from: data)
-//
-//                DispatchQueue.main.async {
-//                    self.ipLabel.text = self.myIpGeo?.description ?? ""
-//                    //
-//                }
-//            } catch let error {
-//                print(error.localizedDescription)
-//            }
-//
-//        }.resume()
-//    }
-//
-//
-//
-//}
+// MARK: - Networking
+extension IpGeoViewController {
+
+    func fetchIpGeo() {
+
+        guard  let url = URL(string: "https://freegeoip.app/json/") else {
+            return
+        }
+
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print (error?.localizedDescription ?? "no error description")
+                return
+            }
+
+            do {
+                self.myIpGeo = try JSONDecoder().decode(IpGeo.self, from: data)
+
+                DispatchQueue.main.async {
+                    self.ipLabel.text = self.myIpGeo?.description ?? ""
+                    //
+                }
+            } catch let error {
+                print(error.localizedDescription)
+            }
+
+        }.resume()
+    }
+
+
+
+}
 

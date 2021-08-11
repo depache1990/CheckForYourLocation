@@ -63,20 +63,10 @@
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <color key="tintColor" red="0.25719454400000002" green="0.29245022549999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxr-47-XlL">
-                                <rect key="frame" x="150" y="712" width="114" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="d8p-S6-Tsi" kind="show" id="kNG-L9-jbD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wRJ-AU-kDL"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="Qxr-47-XlL" firstAttribute="leading" secondItem="wRJ-AU-kDL" secondAttribute="leading" constant="150" id="0ae-jF-u76"/>
-                            <constraint firstItem="wRJ-AU-kDL" firstAttribute="bottom" secondItem="Qxr-47-XlL" secondAttribute="bottom" constant="120" id="WFz-jv-KW9"/>
-                            <constraint firstItem="wRJ-AU-kDL" firstAttribute="trailing" secondItem="Qxr-47-XlL" secondAttribute="trailing" constant="150" id="dVf-nL-s7U"/>
                             <constraint firstItem="wF4-02-i1z" firstAttribute="centerX" secondItem="xLR-JA-fh1" secondAttribute="centerX" id="eG5-rp-JBX"/>
                             <constraint firstItem="wF4-02-i1z" firstAttribute="centerY" secondItem="xLR-JA-fh1" secondAttribute="centerY" id="kGT-Kv-BFs"/>
                         </constraints>
@@ -89,36 +79,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2H-9U-v3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2350.7246376811595" y="-68.303571428571431"/>
-        </scene>
-        <!--Map View Controller-->
-        <scene sceneID="DOl-yW-cZd">
-            <objects>
-                <viewController id="d8p-S6-Tsi" customClass="MapViewController" customModule="HW_10_IP_Geo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0FQ-3N-4sj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="790-yc-mHd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                            </mapView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="l4n-TO-vsx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="l4n-TO-vsx" firstAttribute="bottom" secondItem="790-yc-mHd" secondAttribute="bottom" id="V7f-5M-99a"/>
-                            <constraint firstItem="790-yc-mHd" firstAttribute="leading" secondItem="l4n-TO-vsx" secondAttribute="leading" id="wLG-G8-Grd"/>
-                            <constraint firstItem="790-yc-mHd" firstAttribute="top" secondItem="l4n-TO-vsx" secondAttribute="top" id="ymw-ES-vfy"/>
-                            <constraint firstItem="l4n-TO-vsx" firstAttribute="trailing" secondItem="790-yc-mHd" secondAttribute="trailing" id="zKR-gU-WCi"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="1Cm-rC-ase"/>
-                    <connections>
-                        <outlet property="mapView" destination="790-yc-mHd" id="uQH-Ez-NYh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zx8-gD-P7E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3143" y="-268"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="akv-2V-4vU">

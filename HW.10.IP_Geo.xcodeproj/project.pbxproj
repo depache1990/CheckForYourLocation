@@ -17,7 +17,6 @@
 		7F1C655F26BDBD4300DC949A /* IpGeo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C655E26BDBD4300DC949A /* IpGeo.swift */; };
 		7F1C656526BDC97300DC949A /* IpGeoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C656426BDC97300DC949A /* IpGeoViewController.swift */; };
 		7F1C656C26C2853C00DC949A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C656B26C2853C00DC949A /* NetworkManager.swift */; };
-		7FB987DF26C3D89500D257F7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB987DE26C3D89500D257F7 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		7F1C655E26BDBD4300DC949A /* IpGeo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpGeo.swift; sourceTree = "<group>"; };
 		7F1C656426BDC97300DC949A /* IpGeoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpGeoViewController.swift; sourceTree = "<group>"; };
 		7F1C656B26C2853C00DC949A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		7FB987DE26C3D89500D257F7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DD0FF37A2C7E2AD772E2EB67 /* Pods_HW_10_IP_Geo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW_10_IP_Geo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				7F1C656426BDC97300DC949A /* IpGeoViewController.swift */,
-				7FB987DE26C3D89500D257F7 /* MapViewController.swift */,
 				7F1C654E26BDBCC700DC949A /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -263,7 +260,6 @@
 				7F1C656C26C2853C00DC949A /* NetworkManager.swift in Sources */,
 				7F1C656526BDC97300DC949A /* IpGeoViewController.swift in Sources */,
 				7F1C654D26BDBCC700DC949A /* SceneDelegate.swift in Sources */,
-				7FB987DF26C3D89500D257F7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
