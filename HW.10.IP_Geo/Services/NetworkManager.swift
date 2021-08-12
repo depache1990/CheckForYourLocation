@@ -14,49 +14,49 @@ class NetworkManager {
     
     private init() {}
     
-    func fetchData(from url: String?, with complition: @escaping (IpGeo) -> Void) {
-        guard let stringURL = url else { return }
-        guard let url = URL(string: stringURL) else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
-            if let error = error {
-                print(error)
-                return
-            }
-            guard let data = data else { return }
-            
-            do {
-                let ipGeo = try JSONDecoder().decode(IpGeo.self, from: data)
-                DispatchQueue.main.async {
-                    complition(ipGeo)
-                }
-            } catch let error {
-                print(error)
-            }
-            
-        }.resume()
-    }
+//    func fetchData(from url: String?, with complition: @escaping (IpGeo) -> Void) {
+//        guard let stringURL = url else { return }
+//        guard let url = URL(string: stringURL) else { return }
+//
+//        URLSession.shared.dataTask(with: url) { (data, _, error) in
+//            if let error = error {
+//                print(error)
+//                return
+//            }
+//            guard let data = data else { return }
+//
+//            do {
+//                let ipGeo = try JSONDecoder().decode(IpGeo.self, from: data)
+//                DispatchQueue.main.async {
+//                    complition(ipGeo)
+//                }
+//            } catch let error {
+//                print(error)
+//            }
+//
+//        }.resume()
+//    }
     
-    func alomafireGetButton(){
+    func getUsers(_ completion: @escaping (IpGeo) -> Void) {
         AF.request(URLS.myIpAddress.rawValue, method: .get)
+            .validate()
             .responseJSON { dataResponse in
-                guard let statusCode = dataResponse.response?.statusCode else { return }
-                print("statusCode", statusCode)
+             
+                switch dataResponse.result {
                 
-                if (200..<300).contains(statusCode) {
-                    guard let value = dataResponse.value else { return }
-                    print("value", value)
-                } else {
-                    guard let error = dataResponse.error else { return }
+                
+                case .success(let value):
+                    guard let results = IpGeo.getIpGeo(from: value) else { return }
+                    completion(results)
+                case .failure(let error):
                     print(error)
                 }
-                
-                
-            }
     }
     
     
     
+
+
+
 }
-
-
+}

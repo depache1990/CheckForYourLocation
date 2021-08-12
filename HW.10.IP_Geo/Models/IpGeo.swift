@@ -15,7 +15,7 @@ struct IpGeo: Decodable {
     let time_zone: String
     let latitude: Double
     let longitude: Double
-    let metro_code: Int
+    let metro_code: String
     var description: String {
         """
         ip: \(ip)
@@ -31,7 +31,27 @@ struct IpGeo: Decodable {
         Metro Code: \(metro_code)
     """
     }
+    init (value: [String: Any]){
+        ip = value["ip"] as? String ?? ""
+country_code = value["country_code"] as? String ?? ""
+country_name = value["country_name"] as? String ?? ""
+region_code = value["region_code"] as? String ?? ""
+region_name = value["region_name"] as? String ?? ""
+city = value["city"] as? String ?? ""
+zip_code = value["zip_code"] as? String ?? ""
+time_zone = value["time_zone"] as? String ?? ""
+latitude = value["latitude"] as? Double ?? 0
+longitude = value["longitude"] as? Double ?? 0
+metro_code = value["metro_code"] as? String ?? ""
+        
+    }
+    static func getIpGeo(from value: Any) ->IpGeo? {
+        guard let value = value as? [String: Any] else { return nil }
+        return IpGeo(value: value)
     
+    }
+    
+
 }
 
 enum URLS: String {
