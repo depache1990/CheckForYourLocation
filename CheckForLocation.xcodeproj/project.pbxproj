@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		5618B35FFF951D5EC6DBD03F /* Pods-HW.10.IP_Geo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW.10.IP_Geo.debug.xcconfig"; path = "Target Support Files/Pods-HW.10.IP_Geo/Pods-HW.10.IP_Geo.debug.xcconfig"; sourceTree = "<group>"; };
 		742438A6FA4ACB5911437C17 /* Pods-HW.10.IP_Geo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW.10.IP_Geo.release.xcconfig"; path = "Target Support Files/Pods-HW.10.IP_Geo/Pods-HW.10.IP_Geo.release.xcconfig"; sourceTree = "<group>"; };
-		7F1C654726BDBCC700DC949A /* HW.10.IP_Geo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW.10.IP_Geo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1C654726BDBCC700DC949A /* CheckForLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckForLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1C654A26BDBCC700DC949A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F1C654C26BDBCC700DC949A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F1C654E26BDBCC700DC949A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		7F1C653E26BDBCC700DC949A = {
 			isa = PBXGroup;
 			children = (
-				7F1C654926BDBCC700DC949A /* HW.10.IP_Geo */,
+				7F1C654926BDBCC700DC949A /* CheckForlocation */,
 				7F1C654826BDBCC700DC949A /* Products */,
 				42211241F4FB6B0B9280BF51 /* Pods */,
 				4C8A74B93B300418FD98B744 /* Frameworks */,
@@ -78,12 +78,12 @@
 		7F1C654826BDBCC700DC949A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F1C654726BDBCC700DC949A /* HW.10.IP_Geo.app */,
+				7F1C654726BDBCC700DC949A /* CheckForLocation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F1C654926BDBCC700DC949A /* HW.10.IP_Geo */ = {
+		7F1C654926BDBCC700DC949A /* CheckForlocation */ = {
 			isa = PBXGroup;
 			children = (
 				7F1C656326BDBDBF00DC949A /* Supporting files */,
@@ -92,7 +92,7 @@
 				7F1C656226BDBDA300DC949A /* StoryBoards */,
 				7F1C656D26C2854000DC949A /* Services */,
 			);
-			path = HW.10.IP_Geo;
+			path = CheckForlocation;
 			sourceTree = "<group>";
 		};
 		7F1C656026BDBD4800DC949A /* Models */ = {
@@ -143,9 +143,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7F1C654626BDBCC700DC949A /* HW.10.IP_Geo */ = {
+		7F1C654626BDBCC700DC949A /* CheckForLocation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F1C655B26BDBCCB00DC949A /* Build configuration list for PBXNativeTarget "HW.10.IP_Geo" */;
+			buildConfigurationList = 7F1C655B26BDBCCB00DC949A /* Build configuration list for PBXNativeTarget "CheckForLocation" */;
 			buildPhases = (
 				4AC9674EF26DA4142E3A4B58 /* [CP] Check Pods Manifest.lock */,
 				7F1C654326BDBCC700DC949A /* Sources */,
@@ -157,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = HW.10.IP_Geo;
+			name = CheckForLocation;
 			productName = HW.10.IP_Geo;
-			productReference = 7F1C654726BDBCC700DC949A /* HW.10.IP_Geo.app */;
+			productReference = 7F1C654726BDBCC700DC949A /* CheckForLocation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7F1C654226BDBCC700DC949A /* Build configuration list for PBXProject "HW.10.IP_Geo" */;
+			buildConfigurationList = 7F1C654226BDBCC700DC949A /* Build configuration list for PBXProject "CheckForLocation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -189,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7F1C654626BDBCC700DC949A /* HW.10.IP_Geo */,
+				7F1C654626BDBCC700DC949A /* CheckForLocation */,
 			);
 		};
 /* End PBXProject section */
@@ -409,7 +409,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PD9MGCM3R5;
-				INFOPLIST_FILE = "HW.10.IP_Geo/Supporting files/Info.plist";
+				INFOPLIST_FILE = "CheckForLocation/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,7 +429,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PD9MGCM3R5;
-				INFOPLIST_FILE = "HW.10.IP_Geo/Supporting files/Info.plist";
+				INFOPLIST_FILE = "CheckForLocation/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +444,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F1C654226BDBCC700DC949A /* Build configuration list for PBXProject "HW.10.IP_Geo" */ = {
+		7F1C654226BDBCC700DC949A /* Build configuration list for PBXProject "CheckForLocation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F1C655926BDBCCB00DC949A /* Debug */,
@@ -453,7 +453,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F1C655B26BDBCCB00DC949A /* Build configuration list for PBXNativeTarget "HW.10.IP_Geo" */ = {
+		7F1C655B26BDBCCB00DC949A /* Build configuration list for PBXNativeTarget "CheckForLocation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F1C655C26BDBCCB00DC949A /* Debug */,

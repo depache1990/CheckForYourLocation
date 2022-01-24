@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:HW.10.IP_Geo.xcodeproj">
+      location = "group:/Users/a.duplin/Documents/CheckForLocation/CheckForLocation.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
