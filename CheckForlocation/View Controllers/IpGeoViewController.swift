@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Alamofire
+//import Alamofire
 
 
 class IpGeoViewController: UIViewController {
@@ -15,13 +15,13 @@ class IpGeoViewController: UIViewController {
     
     var myIpGeo: IpGeo?
     
-    private func fetchIpGeo() {
-        NetworkManager.shared.getUsers { [self]
-            IpGeo in
-            ipLabel.text = IpGeo.description
-        }
-        
-    }
+//    private func fetchIpGeo() {
+//        NetworkManager.shared.getUsers { [self]
+//            IpGeo in
+//            ipLabel.text = IpGeo.description
+//        }
+//
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,32 +35,32 @@ class IpGeoViewController: UIViewController {
 // MARK: - Networking
 extension IpGeoViewController {
     
-    //    func fetchIpGeo() {
-    //
-    //        guard  let url = URL(string: "https://freegeoip.app/json/") else {
-    //            return
-    //        }
-    //
-    //        URLSession.shared.dataTask(with: url) { data, _, error in
-    //            guard let data = data else {
-    //                print (error?.localizedDescription ?? "no error description")
-    //                return
-    //            }
-    //
-    //            do {
-    //                self.myIpGeo = try JSONDecoder().decode(IpGeo.self, from: data)
-    //
-    //                DispatchQueue.main.async {
-    //                    self.ipLabel.text = self.myIpGeo?.description ?? ""
-    //                    //
-    //                }
-    //            } catch let error {
-    //                print(error.localizedDescription)
-    //            }
-    //
-    //        }.resume()
-    //    }
-    //
+        func fetchIpGeo() {
+    
+            guard  let url = URL(string: URLS.myIpAddress.rawValue) else {
+                return
+            }
+    
+            URLSession.shared.dataTask(with: url) { data, _, error in
+                guard let data = data else {
+                    print (error?.localizedDescription ?? "no error description")
+                    return
+                }
+    
+                do {
+                    self.myIpGeo = try JSONDecoder().decode(IpGeo.self, from: data)
+    
+                    DispatchQueue.main.async {
+                        self.ipLabel.text = self.myIpGeo?.description ?? ""
+                        //
+                    }
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+    
+            }.resume()
+        }
+    
     
     
 }
